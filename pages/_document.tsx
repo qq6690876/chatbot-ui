@@ -14,15 +14,19 @@ export default function Document(props: Props) {
       <Head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="Chatbot UI"></meta>
-<script>
-var _hmt = _hmt || [];
+ <script
+            dangerouslySetInnerHTML={{
+              __html: `
+             var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?93c7df9227f8033dfdc9a039b678f3de";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script>
+              `,
+            }}
+          />
 
 
       </Head>
